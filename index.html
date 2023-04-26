@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--link to CDN Font Awesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <link rel="stylesheet" href="/assets/reset.css">
     <link rel="stylesheet" href="/assets/style.css">
@@ -13,37 +14,35 @@
 </head>
 
 <body>
-    <!-- nav bar goes here-->
     <div class="navBar">
         <ul>
             <li id="name">Christina Feland</li>
             <div class="navTools">
-                <li>About Me</li>
-                <li> Work</li>
-                <li><a href="/assets/Resume.html" style="text-decoration:none; color: white;"> Resume</a></li>
-                <li> Contact Me</li>
+                <li><a class="navNames" href="#aboutMe">About Me</a></li>
+                <li> <a class="navNames" href="#work">Work</a></li>
+                <li><a class="navNames" href="/assets/Resume.html"> Resume</a></li>
+                <li><a class="navNames" href="#contactMe">Contact Me</a></li>
             </div>
         </ul>
     </div>
     <br>
-    <div class="box" style="background-color: black;">
+    <div class="box" id="aboutMe">
         <div class="menu">About Me</div>
         <div class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo natus dolores dolor quos
             facere reprehenderit dolorum voluptates quasi velit doloremque sint illum sapiente, laudantium obcaecati
             dolorem vel pariatur voluptate ut?</div>
     </div>
-    <div class="box" style="background-color: purple;">
+    <div class="box" id="work">
         <div class="menu"> Work</div>
         <div class="content"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem sequi harum nisi
             obcaecati blanditiis, voluptates deleniti autem fugit, illo repellendus aliquam eligendi eaque, nesciunt
             quia iure magnam rem architecto accusamus?</div>
     </div>
-    <div class="bottomBox">
+    <div class="bottomBox" id="contactMe">
         <div class="box1">
-            <h1>Resume</h1>
+            <h1 id="resumeText">Resume</h1>
             <p id="contentResume"> Please click on the image below to view my current resume!</p>
             <br>
-            <!-- img of resume here-->
             <a href="/assets/Resume.html"> <img src="/assets/images/resume-img.png" id="resumeImg" alt="picture of resume"></a>
         </div>
         <div class="box2">

@@ -39,21 +39,29 @@ body{
 .navTools li:hover {
     background-color: rgb(180, 113, 172);
 }
+/*created class to get rid of bookmark underline and color*/
+.navNames {
+    text-decoration: none;
+    color:white;
+}
 .box {
-    max-width: 100%;
+    max-width: 90%;
     height: 300px;
     position: relative;
     border:solid rgb(219, 138, 210);
-    margin: 10px;
+    border-width: 2px;
+    margin: auto;
+    margin-bottom: 20px;
+    box-shadow: 4px 4px 8px 4px rgb(130, 127, 129);
 }
 .menu {
     position:absolute;
     width: 30%;
     height: 296px;
-    background-color: green;
+    background-color: white;
     padding-top: 125px;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 25px;
+    font-size: 35px;
     color:rgb(219, 138, 210);
     text-align: center;
 }
@@ -61,11 +69,11 @@ body{
     width: 70%;
     height:296px;
     padding: 10px 20px;
-    background-color: orange;
+    background-color:rgb(219, 138, 210);
     float: right;
     font-family:Arial, Helvetica, sans-serif;
     font-size: 20px;
-    color:rgb(219, 138, 210);
+    color: white;
 }
 #contentResume {
     font-family:Arial, Helvetica, sans-serif;
@@ -94,6 +102,10 @@ body{
     color: white;
     background-color:rgb(219, 138, 210);
 }
+#resumeText {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 35px;
+}
 .box2 {
     width: 35%;
     height: 550px;
@@ -109,6 +121,7 @@ img {
     height:300px;
     object-fit: cover;
 }
+/*icon styling*/
 .fa-brands {
     text-decoration: none;
     font-size: 22px;
