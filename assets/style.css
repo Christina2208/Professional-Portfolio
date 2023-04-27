@@ -3,7 +3,8 @@
     max-width: 100%;
 }
 body{
-    margin: 0px;  
+    margin: 0px;
+    text-align: center;  
 }
 .navBar {
     max-width: 100%;
@@ -45,14 +46,15 @@ body{
     color:white;
 }
 .box {
-    max-width: 90%;
-    height: 600px;
+    width: 90%;
+    /* height: ; */
+    margin: auto;
     position: relative;
     border:solid rgb(219, 138, 210);
     border-width: 2px;
-    margin: auto;
     margin-bottom: 20px;
     box-shadow: 4px 4px 8px 4px rgb(130, 127, 129);
+    display: inline-block;
 }
 .row {
     margin: 8px;
@@ -68,11 +70,11 @@ body{
     background-color: white;
     padding: 10px;
 }
-h3 {
+.columnContent h3 {
     color:rgb(219, 138, 210);
     font-family:Arial, Helvetica, sans-serif;
 }
-p {
+.columnContent p {
     color:rgb(219, 138, 210);
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -82,26 +84,49 @@ p {
     display: table;
     clear: both;
 }
-.menu {
-    position:absolute;
+.menuOne {
+    /* position:absolute; */
     width: 30%;
-    height: 595px;
+    /* height: 595px; */
     background-color: white;
-    padding-top: 125px;
+    padding-top: 100px;
+    text-align: center;
+    display: inline-block;
+    float: left;
+}
+.menuOne h3 {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 35px;
     color:rgb(219, 138, 210);
+}
+.menuTwo {
+    /* position:absolute; */
+    width: 30%;
+    /* height: 595px; */
+    background-color: white;
+    padding-top: 170px;
     text-align: center;
+    display: inline-block;
+    float: left;
+}
+.menuTwo h3 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 35px;
+    color:rgb(219, 138, 210);
 }
 .content {
     width: 70%;
-    height:596px;
+    /* height:596px; */
     padding: 10px 20px;
     background-color:rgb(219, 138, 210);
     float: right;
     font-family:Arial, Helvetica, sans-serif;
     font-size: 20px;
     color: white;
+    display: inline-block;
+}
+.content p {
+    color: white
 }
 #contentResume {
     font-family:Arial, Helvetica, sans-serif;
@@ -175,4 +200,28 @@ img {
 }
 .fa-regular:hover {
     opacity: 0.7;
+}
+@media screen and (max-width: 576px) {
+    body {
+    background-color: #dce615;
+    }
+    .navTools li {
+        display: inline-block;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 30px;
+        color: white;
+        padding: 0px; 
+        margin: 5px;
+        margin-top: 43px;
+    }
+.navTools {
+        margin: 10px;
+        width: 100%;
+    } 
+    .navBar {
+        height: 165px;
+        margin-top: -17px;
+        background-color: rgb(219, 138, 210);
+        position: relative;
+}
 }
